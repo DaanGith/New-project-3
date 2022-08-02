@@ -1,0 +1,93 @@
+/*Icons*/ 
+@mixin mainFa {
+    font-size: large;
+    text-align: center;
+    text-decoration: underline;
+    color: $primary-color;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 100px;
+    right: 0px;
+    transition: width 0.5s;
+}
+
+.fa-laptop-code {
+    @include mainFa();
+    background: #e17b77;
+}
+  
+.fa-twitter {
+    @include mainFa();
+    background: #00aced;
+}
+
+.fa-linkedin-in {
+    @include mainFa();
+    background: #007bb6;
+}
+
+.fa-facebook-f {
+    font-size: large;
+    text-align: center;
+    text-decoration: underline;
+    color: $primary-color;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 200px;
+    right: 0px;
+    background: #3b5998;
+    transition: width 0.5s;
+}
+
+.fa-github {
+    font-size: large;
+    text-align: center;
+    text-decoration: underline;
+    color: $primary-color;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 300px;
+    right: 0px;
+    background: #333;
+    transition: width 0.5s;
+}
+
+.fa-laptop-code:hover {
+    width: 250px;
+    &::after {
+        content: "Check out my blog";
+    }
+}
+
+.fa-twitter:hover {
+    width: 250px;
+    &::after {
+        content: "Follow me on Twitter";
+    }
+}
+
+.fa-linkedin-in:hover {
+    width: 250px;
+    &::after {
+        content: "Contact on Linkedin";       
+    }
+}
+
+.fa-facebook-f:hover {
+    width: 250px;
+    &::after {
+        content: "Like my Facebook page";
+    }
+}
+
+
+.fa-github:hover {
+    width: 250px;
+    &::after {
+        content: "See projects on Github";
+        text-align: center;
+    }
+}
